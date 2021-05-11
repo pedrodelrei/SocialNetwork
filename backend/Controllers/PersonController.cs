@@ -13,10 +13,6 @@ namespace backend.Controllers
     [Route("[controller]")]
     public class PersonController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
         private readonly ILogger<PersonController> _logger;
         private readonly SocialNetworkContext _context;
